@@ -3,6 +3,7 @@ const router = require('express').Router();
 const path = require('path');
 const fs = require('fs');
 
+
 router.get('/notes', (req, res) => {
    console.log('in /notes route', __dirname)
     res.sendFile(path.join(__dirname,'../public/notes.html'))
